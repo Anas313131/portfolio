@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils"
-import { Marquee } from "@/components/ui/marquee";// adjust if needed
+import { cn } from "@/lib/utils";
+import { Marquee } from "@/components/ui/marquee"; // fix path if needed
 
 const reviews = [
   {
@@ -22,83 +22,68 @@ const reviews = [
   },
 ]
 
-// Split rows properly
-const firstRow = reviews.slice(0, Math.ceil(reviews.length / 2))
-const secondRow = reviews.slice(Math.ceil(reviews.length / 2))
-const thirdRow = [...reviews]
-const fourthRow = [...reviews].reverse()
+// ✅ FIX: proper split
+const mid = Math.ceil(reviews.length / 2)
+const firstRow = reviews.slice(0, mid)
+const secondRow = reviews.slice(mid)
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-fit cursor-pointer overflow-hidden rounded-xl border p-4 sm:w-36",
-        "border-gray-950/10 bg-gray-950/1 hover:bg-gray-950/5",
-        "dark:border-gray-50/10 dark:bg-gray-50/10 dark:hover:bg-gray-50/15"
+        "relative w-64 cursor-pointer overflow-hidden rounded-2xl border p-4 transition-all duration-300",
+        "border-gray-200 bg-white hover:shadow-xl hover:-translate-y-1",
+        "dark:border-gray-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex items-center gap-3">
         <img
           className="rounded-full"
-          width="32"
-          height="32"
+          width="40"
+          height="40"
           alt={name}
           src={img}
         />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
+        <div>
+          <figcaption className="text-sm font-semibold dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">
+          <p className="text-xs text-gray-500 dark:text-gray-400">
             {username}
           </p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+
+      <blockquote className="mt-3 text-sm text-gray-700 dark:text-gray-300">
+        {body}
+      </blockquote>
     </figure>
   )
 }
 
-export function Marquee3D() {
+export function MarqueeDemoVertical() {
   return (
-    <div className="relative flex h-96 w-full items-center justify-center gap-4 overflow-hidden [perspective:300px]">
-      <div
-        className="flex flex-row items-center gap-4"
-        style={{
-          transform:
-            "translateX(-100px) translateY(0px) translateZ(-100px) rotateX(20deg) rotateY(-10deg) rotateZ(20deg)",
-        }}
-      >
-        <Marquee pauseOnHover vertical className="[--duration:20s]">
-          {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+    <div className="relative flex h-[500px] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-zinc-900">
+      
+      {/* Left Column */}
+      <Marquee pauseOnHover vertical className="[--duration:25s]">
+        {firstRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
 
-        <Marquee reverse pauseOnHover vertical className="[--duration:20s]">
-          {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+      {/* Right Column */}
+      <Marquee reverse pauseOnHover vertical className="[--duration:25s]">
+        {secondRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
 
-        <Marquee reverse pauseOnHover vertical className="[--duration:20s]">
-          {thirdRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+      {/* Gradient fade top */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white dark:from-black"></div>
 
-        <Marquee pauseOnHover vertical className="[--duration:20s]">
-          {fourthRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
-      </div>
-
-      {/* gradient overlays */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+      {/* Gradient fade bottom */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white dark:from-black"></div>
     </div>
   )
 }

@@ -10,7 +10,7 @@ export default function AndroidDemo() {
   <div className="w-300px h-600px items-center justify-center">
     <Android
       className="w-full h-full object-contain rounded-[30px]"
-      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/1867a489788291.5e00bbeda7d8c.png"
+      src="https://play-lh.googleusercontent.com/_sSxUe-GapAwvX4SfpJSHDOogYn4LlYAfpp1lsEhRaawPmDi3DpQoGoecLdqYzmraA=w526-h296-rw"
     />
   </div>
 

@@ -9,12 +9,15 @@ import Hero from "./components/Hero.jsx";
 import { VideoTextDemo } from "./components/VideoTextDemo";
 import { Marquee } from "./components/ui/marquee";
 import IphoneDemo from "./components/IphoneDemo";
+import { NumberTickerDemo } from "./components/NumberTicker";
+import ScrollTriggered from "./components/ScrollTriggered";
 
 function App() {
   return (
     <div>
       <Nav/>
       <Hero /><br/>
+      <NumberTickerDemo/>
       <VideoTextDemo />
       <IconCloudDemo/><br/>
       <VelocityScroll />
@@ -23,6 +26,7 @@ function App() {
       <AndroidDemo/>
       <Marquee />
       <IphoneDemo/>
+      <ScrollTriggered />
       <Newsletter/>
     </div>
   );
