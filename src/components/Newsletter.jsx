@@ -53,13 +53,13 @@ const Newsletter = () => {
         </div>
 
         {/* Social */}
-        <div>
+        <div className='cursor-pointer'>
           <h3 className="font-semibold mb-4">Follow Us</h3>
           <ul className="space-y-2 text-gray-700">
-            <li>Instagram</li>
-            <li>LinkedIn</li>
-            <li>Youtube</li>
-            <li>Twitter</li>
+            <li><a href="https://www.instagram.com/studio.scorp/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/anas-azam-618b1022b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+            <li><a href="https://github.com/Anas313131">Github</a></li>
+            <li><a href="https://x.com/automateitanas">Twitter</a></li>
           </ul>
         </div>
 

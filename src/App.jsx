@@ -6,17 +6,23 @@ import IconCloudDemo from "./components/IconCloudDemo.jsx";
 import Nav from "./components/Nav.jsx";
 import Newsletter from "./components/Newsletter.jsx";
 import Hero from "./components/Hero.jsx";
+import { VideoTextDemo } from "./components/VideoTextDemo";
+import { Marquee } from "./components/ui/marquee";
+import IphoneDemo from "./components/IphoneDemo";
 
 function App() {
   return (
     <div>
       <Nav/>
       <Hero /><br/>
+      <VideoTextDemo />
       <IconCloudDemo/><br/>
       <VelocityScroll />
       <ScrollImages />
-      <LensDemo /> <br/><br/>
+      <LensDemo /> <br/>
       <AndroidDemo/>
+      <Marquee />
+      <IphoneDemo/>
       <Newsletter/>
     </div>
   );

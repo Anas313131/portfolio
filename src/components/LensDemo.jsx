@@ -14,7 +14,7 @@ export default function LensDemo() {
   return (
     <div className="flex items-center justify-center gap-10 px-10 bg-[#f5f5f3] py-20">
         <h1 className="font-bold text-3xl">Web Development with 
-            <br/>React Next and Node plus .Net tech stack</h1>x<br/>
+            <br/>ReactJs NextJs and NodeJs plus .Net tech stack</h1>x<br/>
     <Card className="relative max-w-md mx-auto">
       <CardHeader>
         <Lens defaultPosition={{ x: 260, y: 150 }}>

@@ -22,11 +22,11 @@ const Hero = () => {
 
         <div className="w-72 h-2 bg-yellow-300 mx-auto mt-2 rounded-full"></div>
 
-        <p className="mt-10 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+        <h3 className="mt-10 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
           We are a team of developers, designers communicators, researchers.
           Together, we belive that progress only happens when you refuse to
           play things safe.
-        </p>
+        </h3>
       </div>
        </section>
   )
