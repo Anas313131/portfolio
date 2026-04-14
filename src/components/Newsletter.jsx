@@ -69,8 +69,8 @@ const Newsletter = () => {
           <p className="text-gray-700">
             1498w Fulton ste, STE 2D Chicago, IL 63867.
           </p>
-          <p className="mt-2 text-gray-700">(123) 456789000</p>
-          <p className="mt-2 text-gray-700">info@elementum.com</p>
+          <p className="mt-2 text-gray-700">(+91) 9289689745</p>
+          <p className="mt-2 text-gray-700">anas.azam2001@gmail.com</p>
         </div>
 
       </div>

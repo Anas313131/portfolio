@@ -5,7 +5,7 @@ import {
 
 export default function VelocityScroll() {
   return (
-    <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
+    <ScrollVelocityContainer className="text-4xl text-violet-600 font-bold font-serif md:text-7xl">
       <ScrollVelocityRow baseVelocity={20} direction={1}>
          || PORTFOLIO
       </ScrollVelocityRow>

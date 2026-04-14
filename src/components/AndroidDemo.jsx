@@ -15,11 +15,13 @@ export default function AndroidDemo() {
   </div> */}
 
   {/* RIGHT SIDE (Text) */}
-  <h1 className="text-4xl font-bold max-w-125">
-    ANDROID APP DEVELOPMENT WITH KOTLIN, FIREBASE 
+  <h1 className="text-5xl font-serif text-blue-700 border-amber-200 border-r-8 py-20 font-bold max-w-125 cursor-pointer">
+<a href="#">
+    ANDROID APP DEVELOPMENT<br/> WITH KOTLIN, FIREBASE 
     & <br/>
     FLUTTER DEVELOPMENT<br/>
-    <Button className="bg-blue-700 text-white size-8px" variant="outline">DIVE</Button>
+    </a>
+    <Button className="bg-blue-700 text-white size-8px" variant="outline">Modern Apps</Button>
   </h1>
 
     <div className="w-[300px] h-600px items-center justify-center">

@@ -4,7 +4,7 @@ const Nav = () => {
   return (
      <nav className="w-full px-8 py-6 flex items-center justify-between">
   {/* Left Logo */}
-  <div className="text-3xl font-bold cursor-pointer">
+  <div className="text-3xl text-red-900 font-sans font-bold cursor-pointer">
     PORTFOLIO
   </div>
 

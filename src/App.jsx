@@ -20,8 +20,8 @@ function App() {
       <VideoTextDemo />
       <NumberTickerDemo/>
       <IconCloudDemo/><br/>
-      <VelocityScroll />
-      <ScrollImages />
+      <VelocityScroll /><br/>
+      <ScrollImages /><br/>
       <LensDemo /> <br/>
       <AndroidDemo/>
       <Marquee />
