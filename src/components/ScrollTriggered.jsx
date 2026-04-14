@@ -102,7 +102,7 @@ const card = {
 
 /* Data */
 const food = [
-  ["THNK", 340, 10],
+  ["THNKS", 340, 10],
   ["FOR", 20, 40],
   ["VISIT", 60, 90],
   ["MY", 80, 120],

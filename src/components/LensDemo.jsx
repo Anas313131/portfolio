@@ -12,7 +12,7 @@ import { div } from "motion/react-client";
 
 export default function LensDemo() {
   return (
-    <div className="flex items-center justify-center gap-10 px-10 bg-[#f5f5f3] py-20">
+    <div className="flex items-center justify-center gap-10 px-10 bg-[#eeee31] py-20">
         <h1 className="font-bold text-3xl">Web Development with 
             <br/>ReactJs NextJs and NodeJs plus .Net tech stack</h1>x<br/>
     <Card className="relative max-w-md mx-auto">

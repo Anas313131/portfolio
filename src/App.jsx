@@ -17,8 +17,8 @@ function App() {
     <div>
       <Nav/>
       <Hero /><br/>
-      <NumberTickerDemo/>
       <VideoTextDemo />
+      <NumberTickerDemo/>
       <IconCloudDemo/><br/>
       <VelocityScroll />
       <ScrollImages />

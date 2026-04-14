@@ -15,7 +15,7 @@ const IMAGES_ROW_B = [
 
 export default function ScrollImages() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden py-8">
+    <div className="relative bg-green-400 flex w-full flex-col items-center justify-center overflow-hidden py-8">
       <ScrollVelocityContainer className="w-full">
         <ScrollVelocityRow baseVelocity={6} direction={1} className="py-4">
           {IMAGES_ROW_A.map((src, idx) => (
