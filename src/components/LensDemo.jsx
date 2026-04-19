@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AuroraText } from "./ui/aurora-text";
 import {
   Card,
   CardContent,
@@ -12,9 +13,9 @@ import { div } from "motion/react-client";
 
 export default function LensDemo() {
   return (
-    <div className="flex items-center justify-center gap-10 px-10 bg-[#eeee31] py-20">
-        <h1 className="font-bold text-3xl">Web Development with 
-            <br/>ReactJs NextJs and NodeJs plus .Net tech stack</h1>x<br/>
+    <div className="flex items-center justify-center gap-8 px-10 bg-[#000000] py-20">
+        <h1 className="font-bold text-4xl"><AuroraText> Development with </AuroraText>
+            <br/><AuroraText>ReactJs NextJs and NodeJs plus .Net tech stack</AuroraText></h1>x<br/>
     <Card className="relative max-w-md mx-auto">
       <CardHeader>
         <Lens defaultPosition={{ x: 260, y: 150 }}>

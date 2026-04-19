@@ -11,13 +11,20 @@ import { Marquee } from "./components/ui/marquee";
 import IphoneDemo from "./components/IphoneDemo";
 import { NumberTickerDemo } from "./components/NumberTicker";
 import ScrollTriggered from "./components/ScrollTriggered";
+import { AuroraTextDemo } from "./components/AuroraText";
+import { DiaTextRevealDemo2 } from "./components/DiaTextReveal";
+import { TypingAnimation } from "./components/ui/typing-animation";
+
+
 
 function App() {
   return (
     <div>
       <Nav/>
-      <Hero /><br/>
-      <VideoTextDemo />
+      <Hero/><br/>
+      <DiaTextRevealDemo2/>
+      <AuroraTextDemo/>
+      <VideoTextDemo/>
       <NumberTickerDemo/>
       <IconCloudDemo/><br/>
       <VelocityScroll /><br/>
@@ -27,6 +34,7 @@ function App() {
       <Marquee />
       <IphoneDemo/>
       <ScrollTriggered />
+      <TypingAnimation/>
       <Newsletter/>
     </div>
   );

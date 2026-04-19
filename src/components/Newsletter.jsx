@@ -1,4 +1,5 @@
 import React from 'react'
+import { DiaTextRevealDemo2 } from './DiaTextReveal'
 
 const Newsletter = () => {
   return (
@@ -21,7 +22,7 @@ const Newsletter = () => {
 
       {/* Button */}
       <button className="mt-8 bg-black text-white px-8 py-3 rounded-full hover:scale-105 transition">
-        SUBSCRIBE NOW
+       SUBSCRIBE NOW
       </button>
 
       {/* Divider */}
