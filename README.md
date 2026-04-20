@@ -1,16 +1,118 @@
-# React + Vite
+# 🚀 Portfolio Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built to showcase services, projects, and client engagement. This web app highlights web and app development services with a bold, visually engaging UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## React Compiler
+👉 👉 [https://anas313131.github.io](https://anas313131.github.io/portfolio/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚡ Clean and modern UI design
+* 📱 Fully responsive (mobile + desktop)
+* 🎯 Service-focused landing section
+* 🧭 Smooth navigation (Home, Work, Testimonials, Contact, FAQ)
+* 🎨 Gradient text and animated styling
+* 🧩 Component-based architecture (React)
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js
+* **Styling:** Tailwind CSS
+* **Deployment:** GitHub Pages
+* **Build Tool:** Vite / CRA (depending on your setup)
+
+---
+
+## 📂 Project Structure
+
+```
+/src
+  /components
+  /pages
+  /assets
+  App.jsx
+  main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Deployment
+
+To deploy on GitHub Pages:
+
+```bash
+npm run build
+npm run deploy
+```
+
+---
+
+## 🎯 Purpose
+
+This project is designed to:
+
+* Showcase development skills
+* Present services professionally
+* Act as a personal brand/portfolio website
+
+---
+
+## 📸 UI Highlight
+
+* Bold typography
+* Gradient headings (blue → purple)
+* Strong messaging:
+  **"We Provide Services Web + App Dev to 2000+ Partners"**
+* Clean dark theme for premium feel
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a PR.
+
+---
+
+## 📧 Contact
+
+For collaboration or inquiries:
+
+* Email: [your-email@example.com](mailto:anas.azam2001@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/anas-azam-618b1022b/
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
